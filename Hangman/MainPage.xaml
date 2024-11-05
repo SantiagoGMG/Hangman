@@ -11,6 +11,65 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition ></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        
+        <VerticalStackLayout
+            Grid.Row="0">
+            <Label
+            x:Name="lblErrores"
+            Text="Errores de 0 de 6"
+            FontSize="40"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Label>
+            <Image
+            x:Name="imgHangman"
+            Source="img0.jpg"
+            WidthRequest="100"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Image>
+            <Label
+            x:Name="lblPalabraAdivinar"
+            FontSize="40"
+            Text ="{Binding Spotlight}"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Label>
+            
+            <Label
+            x:Name="lblPerdiste"
+            Text="Perdiste!"
+            FontSize="40"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Label>
+            
+            <Button
+            x:Name="btnReiniciar"
+            Text="Reiniciar"
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            </Button>
+        </VerticalStackLayout>
+        <FlexLayout
+            Grid.Row="1"
+            Wrap="Wrap"
+            JustifyContent="SpaceEvenly"
+            BindableLayout.ItemsSource="{Binding Letras}"
+             HeightRequest="200">
+
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Button
+                        Text="{Binding .}"
+                        HeightRequest="50"
+                        WidthRequest="50">
+                    </Button>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+            
+        </FlexLayout>
+        
     </Grid>
 
 </ContentPage>
