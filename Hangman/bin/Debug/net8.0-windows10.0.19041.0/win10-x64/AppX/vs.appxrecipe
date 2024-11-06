@@ -30,7 +30,7 @@
     <AppXManifest Include="D:\5to_semestre\Programacion_avanzada\2do_parcial\Hangman\Hangman\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-11-05T22:11:36.283</Modified>
+      <Modified>2024-11-06T01:32:03.962</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\5to_semestre\Programacion_avanzada\2do_parcial\Hangman\Hangman\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Hangman.dll">
       <PackagePath>Hangman.dll</PackagePath>
-      <Modified>2024-11-05T22:11:33.946</Modified>
+      <Modified>2024-11-06T01:32:03.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\5to_semestre\Programacion_avanzada\2do_parcial\Hangman\Hangman\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Hangman.exe</PackagePath>
-      <Modified>2024-11-05T22:11:34.026</Modified>
+      <Modified>2024-11-06T01:32:03.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\5to_semestre\Programacion_avanzada\2do_parcial\Hangman\Hangman\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

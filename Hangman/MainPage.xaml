@@ -16,7 +16,7 @@
             Grid.Row="0">
             <Label
             x:Name="lblErrores"
-            Text="Errores de 0 de 6"
+            Text="Errores: 0 de 6"
             FontSize="40"
             HorizontalOptions="Center"
             VerticalOptions="Center">
@@ -48,7 +48,8 @@
             x:Name="btnReiniciar"
             Text="Reiniciar"
             HorizontalOptions="Center"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+                Clicked="btnReiniciar_Clicked">
             </Button>
         </VerticalStackLayout>
         <FlexLayout
@@ -56,14 +57,17 @@
             Wrap="Wrap"
             JustifyContent="SpaceEvenly"
             BindableLayout.ItemsSource="{Binding Letras}"
-             HeightRequest="200">
+             HeightRequest="200"
+            x:Name="contenedorBotones">
 
             <BindableLayout.ItemTemplate>
                 <DataTemplate>
                     <Button
                         Text="{Binding .}"
                         HeightRequest="50"
-                        WidthRequest="50">
+                        WidthRequest="50"
+                        Clicked="Button_Clicked">
+                        
                     </Button>
                 </DataTemplate>
             </BindableLayout.ItemTemplate>
